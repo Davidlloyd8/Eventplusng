@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>EventPlusng</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <div id="loading">
+        <img id="loading-image" src="./gif/Fading balls.gif" alt="Loading..." />
+    </div>
     <div class="wrapper">
         <div class="slider" >
             <div class="blur">
@@ -211,5 +215,10 @@
 
     </div>
 
+    <script>
+        $(window).on('load', function(){
+            $('#loading').hide();
+        })
+    </script>
 </body>
 </html>
