@@ -1,0 +1,786 @@
+@font-face {
+    font-family: inter;
+    src: url(../Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+.slider{
+    height: 99vh;
+    width: 100%;
+    background-image: url(../images/luxurious-dinner-hall-with-large-crystal-chandelier1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.blur{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    height: 99vh;
+    width:100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 3vh;
+    position: relative;
+}
+#topbar{
+    display: flex;
+}
+.left img{
+    width: 64px;
+    height: 64px;
+}
+.right{
+    margin-left: auto;
+}
+a{
+    margin: 25px 2vw;
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+a:hover{
+    text-decoration: underline;
+}
+button.createEvent{
+    background: rgba(245, 130, 14, 0.8);
+    border-radius: 12px;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    font-size: 24px;
+    letter-spacing: -0.231818px;
+}
+hr{
+    margin-top: 2.8vh;
+}
+.slogan{
+    text-align: center;
+    font-weight: 800;
+    font-size: 64px;
+    margin: 20vh 10vw 5vh 10vw;
+    color: #FFFFFF;
+}
+.download{
+    text-align: center;
+}
+.download img{
+    height: 50px;
+    width: 150px;
+}
+.eventType{
+    width: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 5vh;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.eventType a{
+    margin: 20px;
+    font-weight: 400;
+}
+.eventType a:hover{
+    text-decoration: transparent;
+}
+
+.info{
+    position: relative;
+    padding: 98px 205px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), rgba(37, 194, 203, 0.05);
+}
+.seeAll{
+    display: flex;
+}
+.seeAll a{
+    margin: unset;
+    margin-left: auto;
+    color: rgba(21, 0, 255, 0.25);
+}
+.planShortcut h1{
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.eventsImages{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.eventsImages a{
+    margin: unset;
+    margin-right: 4vw;
+}
+.eventsImages img{
+    width: 20vw;
+}
+.paragraph{
+    margin-bottom: 98px;
+    text-align: center;
+    justify-content: center;
+}
+.paragraph img{
+    height: 96px;
+    width: 96px;
+}
+.paragraph h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.paragraph p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.paragraph button{
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 15px;
+    align-items: center;
+    padding: 16px 30px;
+    margin: 32px 0px;
+}
+
+.planning{
+    margin-bottom: 5vh;
+}
+.planImgblock{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5vw;
+}
+.planImages img{
+    width: 100%;
+}
+.eventDetails{
+    display: flex;
+    font-size: 20px;
+    /* line-height: 24px; */
+}
+.eventDetails a{
+    margin: unset;
+    margin-left: auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    /* line-height: 20px; */
+}
+#seeMore{
+    display: block;
+    text-align: center;
+}
+
+.moreInfo{
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10vw;
+    text-align: center;
+    justify-content: center;
+}
+.moreInfo img{
+    height: 64px;
+    width: 64px;
+}
+.moreInfo h1{
+    font-size: 24px;
+}
+.moreInfo p{
+    font-size: 18px;
+}
+
+#FAQ{
+    text-align: left;
+    justify-content: left;
+}
+.h1{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+.FAQs{
+    margin-bottom: 20px;
+}
+.FAQs h1{
+    font-weight: 500;
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+.FAQs p{
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    align-self: stretch;
+}
+.contact{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2vw;
+}
+.contactCard{
+    width: 20vw;
+    font-size: 18px;
+}
+.contact .fa{
+    color: rgba(245, 130, 14, 0.8);
+}
+
+.socials{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2vw;
+}
+.socials h1{
+    text-align: left;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 90px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.socials .fa{
+    font-size: 20px;
+    border:solid 1px white;
+    color: white;
+    /* background: none; */
+    padding: 6px 8px;
+    border-radius: 100% 100%;
+}
+.fa-facebook{
+    background-image: linear-gradient(134.83deg, #4676ED 14.69%, #436DE4 27.83%, #3C55CD 49.23%, #302EA8 76.04%, #2B1E99 85.61%);
+}
+.fa-instagram{
+    background-image: linear-gradient(225deg, #FBE18A 14.73%, #FCBB45 29.46%, #F75274 41.27%, #D53692 51.69%, #8F39CE 66.94%, #5B4FE9 85.37%);
+}
+.fa-twitter{
+    background-image: linear-gradient(225deg, #33CCFF 14.64%, #337FFF 85.36%);
+}
+.socials a{
+    margin: unset;
+}
+
+#mail{
+    background: #F9F8F8;
+    box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+    border-radius: 12px;
+    align-items: center;
+    padding: 15px 16px;
+    width: 305px;
+    height: 30px;
+    font-size: 16px;
+    border-style: none;
+    margin-bottom: 2vh;
+}
+#submit{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    font-size: 18px;
+    border-color: rgba(245, 130, 14, 0.8);
+
+}
+
+#footer{
+    text-align: center;
+    position: absolute;
+    bottom: 3vh;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:1200px) and (orientation:landscape){
+    .blur{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    a{
+        font-size: 20px;
+        margin: 20px 1vw;
+    }
+    button.createEvent{
+        padding: 12px 25px;
+        font-size: 20px;
+    }
+    .slogan{
+        font-size: 50px;
+    }
+    .eventType{
+        left: 40%;
+        transform: translate(-40%,-40%);
+    }
+    .eventType a{
+        margin: 17px;
+    }
+    .info{
+        padding: 68px 150px;
+    }
+    .planShortcut h1{
+        font-size: 26px;
+    }
+    .eventsImages a{
+        margin-right: 2vw;
+    }
+    .eventsImages img{
+        width: 18vw;
+    }
+    .paragraph{
+        margin-bottom: 78px;
+    }
+    .paragraph img{
+        height: 76px;
+        width: 76px;
+    }
+    .paragraph h1{
+        font-size: 26px;
+    }
+    .paragraph p{
+        font-size: 16px;
+    }
+    .paragraph button{
+        padding: 13px 27px;
+    }
+    .planImgblock{
+        margin: 40px 0;
+        grid-gap: 4vw;
+    }
+    .eventDetails{
+        font-size: 15px;
+    }
+    .eventDetails a{
+        font-size: 12px;
+    }
+    .moreInfo{
+        margin: 50px 0;
+        grid-gap: 5vw;
+    }
+    .moreInfo img{
+        height: 54px;
+        width: 54px;
+    }
+    .h1{
+        font-size: 26px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .FAQs h1{
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+    .FAQs p{
+        font-size: 14px;
+    }
+    .contact{
+        margin: 30px 0;
+    }
+    .contactCard{
+        width: 16vw;
+    }
+    
+    .socials{
+        margin: 30px 0;
+    }
+    .socials h1{
+        font-size: 26px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .socials .fa{
+        font-size: 18px;
+    }
+    .socialGrid{
+        width: 28vw;
+    }
+    #mail{
+        padding: 15px 12px;
+        width: 200px;
+        font-size: 13px;
+    }
+    #submit{
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    #footer{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    a{
+        font-size: 17px;
+    }
+    .left img{
+        width: 44px;
+        height: 44px;
+    }
+    button.createEvent{
+        padding: 12px 20px;
+        font-size: 17px;
+    }
+    .slogan{
+        font-size: 35px;
+    }
+    .eventType{
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .eventType a{
+        margin: 15px;
+    }
+    .info{
+        padding: 68px 120px;
+    }
+    .planShortcut h1{
+        font-size: 23px;
+    }
+    .paragraph h1{
+        font-size: 23px;
+    }
+    .paragraph p{
+        font-size: 14px;
+    }
+    .planImgblock{
+        margin: 30px 0;
+        grid-gap: 4vw;
+    }
+    .eventDetails{
+        font-size: 13px;
+    }
+    .eventDetails a{
+        font-size: 11px;
+    }
+    .moreInfo{
+        grid-gap: 4vw;
+    }
+    .moreInfo h1{
+        font-size: 23px;
+    }
+    .moreInfo p{
+        font-size: 12px;
+    }
+    .h1{
+        font-size: 23px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .FAQs h1{
+        font-size: 19px;
+    }
+    .FAQs p{
+        font-size: 12px;
+    }
+    .contact{
+        margin: 30px 0;
+    }
+    .contactCard{
+        width: 19vw;
+    }
+    
+    .socials{
+        margin: 30px 0;
+    }
+    .socials h1{
+        font-size: 23px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .socials .fa{
+        font-size: 15px;
+    }
+    .socialGrid{
+        width: 35vw;
+    }
+}
+@media only screen and (max-width:800px) and (orientation:landscape){
+    .blur{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    a{
+        font-size: 13px;
+    }
+    .left img{
+        width: 34px;
+        height: 34px;
+    }
+    button.createEvent{
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    .slogan{
+        font-size: 23px;
+    }
+    .download img{
+        height: 30px;
+        width: 100px;
+    }
+    .eventType a{
+        margin: 13px;
+    }
+    .info{
+        padding: 68px 80px;
+    }
+    .planShortcut h1{
+        font-size: 19px;
+    }
+    .paragraph h1{
+        font-size: 19px;
+    }
+    .paragraph p{
+        font-size: 10px;
+    }
+    .paragraph button{
+        padding: 13px 20px;
+        margin: 22px 0px;
+        font-size: 10px;
+    }
+    .planImgblock{
+        margin: 20px 0;
+        grid-gap: 3vw;
+    }
+    .eventDetails{
+        font-size: 10px;
+    }
+    .eventDetails a{
+        font-size: 9px;
+    }
+    .moreInfo{
+        grid-gap: 3vw;
+    }
+    .moreInfo h1{
+        font-size: 15px;
+    }
+    .moreInfo p{
+        font-size: 10px;
+    }
+    .h1{
+        font-size: 19px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .FAQs h1{
+        font-size: 15px;
+    }
+    .FAQs p{
+        font-size: 10px;
+    }
+    .contact{
+        margin: 30px 0;
+    }
+    .contactCard{
+        width: 19vw;
+        font-size: 11px;
+    }
+    
+    .socials{
+        margin: 30px 0;
+    }
+    .socials h1{
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .socials .fa{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:860px){
+    .moreInfo{
+        display:block;
+        margin: unset;
+        /* margin: auto; */
+    }
+    #info1{
+        text-align: left;
+        width: 40vw;
+    }
+    #info2{
+        text-align: center;
+        margin-left: 15vw;
+        width: 40vw;
+    }
+    #info3{
+        text-align: right;
+        margin-left: 30vw;
+        width: 40vw;
+    }
+    .socials{
+        display: block;
+    }
+    .socialGrid{
+        text-align: center;
+        align-items: center;
+        width: unset;
+    }
+}
+@media only screen and (orientation:portrait){
+    .slider{
+        height: 50vh;
+    }
+    .blur{
+        height: 50vh;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .left img{
+        width: 34px;
+        height: 34px;
+    }
+    a{
+        margin: 10px 0.3vw;
+        font-size: 12px;
+    }
+    .hide{
+        display: none;
+    }
+    button.createEvent{
+        padding: 8px 10px;
+        font-size: 12px;
+        background: none;
+    }
+    hr{
+        margin-top: 1.8vh;
+    }
+    .slogan{
+        font-size: 24px;
+        margin: 5vh 10vw 5vh 10vw;
+    }
+    .download img{
+        height: 30px;
+        width: 90px;
+    }
+    .eventType{
+        bottom: 3vh;
+        left: 40%;
+        transform: translate(-40%,-40%);
+    }
+    .eventType a{
+        margin: unset;
+        margin-right: 10px;
+    }
+    .info{
+        padding: 48px 50px;
+    }
+    .planShortcut h1{
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .eventsImages{
+        margin: 20px 0;
+    }
+    .eventsImages a{
+        margin-right: 2vw;
+    }
+    .paragraph{
+        margin-bottom: 58px;
+    }
+    .paragraph img{
+        height: 66px;
+        width: 66px;
+    }
+    .paragraph h1{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .paragraph p{
+        font-size: 10px;
+    }
+    .paragraph button{
+        padding: 10px 18px;
+        margin: 12px 0px;
+    }
+    
+    .planImgblock{
+        grid-gap: 3vw;
+        margin: 30px 0 10px;
+    }
+    .eventDetails{
+        font-size: 10px;
+    }
+    .eventDetails a{
+        font-size: 8px;
+    }
+    .moreInfo h1{
+        font-size: 15px;
+    }
+    .moreInfo p{
+        font-size: 10px;
+    }
+    .h1{
+        font-size: 15px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .FAQs h1{
+        font-size: 13px;
+    }
+    .FAQs p{
+        font-size: 10px;
+    }
+    .contact{
+        margin: 30px 0;
+        grid-gap: 0.3vw;
+    }
+    .contactCard{
+        width: 15vw;
+        font-size: 8px;
+    }
+    .socials{
+        margin: 30px 0;
+    }
+    .socials h1{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .socials .fa{
+        font-size: 12px;
+    }
+    #mail{
+        padding: 10px 9px;
+        width: 200px;
+        height: 22px;
+        font-size: 11px;
+        margin-bottom: 2vh;
+    }
+    #submit{
+        width: 60px;
+        height: 22px;
+        font-size: 12px;
+        text-align: center;
+    
+    }
+    
+    #footer{
+        font-size: 10px;
+    }
+}
