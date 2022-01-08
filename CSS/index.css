@@ -484,6 +484,10 @@ hr{
     .planShortcut h1{
         font-size: 23px;
     }
+    .paragraph img{
+        width: 60px;
+        height: 60px;
+    }
     .paragraph h1{
         font-size: 23px;
     }
@@ -510,6 +514,10 @@ hr{
     }
     .moreInfo{
         grid-gap: 4vw;
+    }
+    .moreInfo img{
+        width: 50px;
+        height: 50px;
     }
     .moreInfo h1{
         font-size: 23px;
@@ -614,6 +622,10 @@ hr{
     .moreInfo{
         grid-gap: 3vw;
     }
+    .moreInfo img{
+        width: 40px;
+        height: 40px;
+    }
     .moreInfo h1{
         font-size: 15px;
     }
@@ -652,6 +664,14 @@ hr{
     }
 }
 @media only screen and (max-width:860px){
+    .hide{
+        display: none;
+    }
+    button.createEvent{
+        padding: 8px 10px;
+        font-size: 12px;
+        background: none;
+    }
     .moreInfo{
         display:block;
         margin: unset;
@@ -680,6 +700,20 @@ hr{
         width: unset;
     }
 }
+@media only screen and (max-width:550px) and (orientation:portrait){
+    #info1{
+        text-align: center;
+        margin: auto;
+    }
+    #info2{
+        text-align: center;
+        margin:auto;
+    }
+    #info3{
+        text-align:center;
+        margin: auto;
+    }
+}
 @media only screen and (orientation:portrait){
     .slider{
         height: 50vh;
@@ -696,9 +730,6 @@ hr{
     a{
         margin: 10px 0.3vw;
         font-size: 12px;
-    }
-    .hide{
-        display: none;
     }
     button.createEvent{
         padding: 8px 10px;
