@@ -1,0 +1,83 @@
+body {
+  background: #ffffff;
+  font-family: "Inter";
+}
+#button_env {
+  margin-top: 14rem !important;
+}
+.signin_btn {
+  background: rgba(245, 130, 14, 0.8);
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.create_btn {
+  background: #ffffff;
+  border: 1px solid #756f86;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.button-link,
+.button-link2,
+.text-link {
+  text-decoration: none;
+}
+.signin_btn:hover {
+  color: #ffffff;
+}
+.signin_btn:active {
+  background: rgba(245, 130, 14, 0.8);
+  color: #ffffff;
+}
+.button-link2 {
+  font-weight: 500;
+}
+.text-link {
+  color: #000 !important;
+  font-weight: 400;
+}
+.text-link:hover {
+  color: rgba(0, 0, 0, 0);
+}
+.text_left {
+  text-align: left !important;
+  font-size: 24px;
+  font-weight: 600;
+}
+.text_form {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left !important;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  outline: none;
+}
+.btn_signin {
+  background: rgba(245, 130, 14, 0.8);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 15px 140px;
+}
+.create_acct {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+.create_acct:hover {
+  color: #000;
+}
+#chb1 {
+  width: 16px;
+  height: 18px;
+}
+.text_terms {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.231818px;
+  color: rgba(0, 0, 0, 0.4);
+}
