@@ -73,6 +73,20 @@ button.createEvent{
     font-size: 24px;
     letter-spacing: -0.231818px;
 }
+#logout{
+    display: none;
+}
+button.logout{
+    background: none;
+    border-radius: 12px;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    font-size: 24px;
+    letter-spacing: -0.231818px;
+}
 hr{
     margin-top: 2.8vh;
 }
@@ -359,6 +373,10 @@ hr{
         padding: 12px 25px;
         font-size: 20px;
     }
+    button.logout{
+        padding: 12px 25px;
+        font-size: 20px;
+    }
     .slogan{
         font-size: 50px;
     }
@@ -481,8 +499,12 @@ hr{
         height: 44px;
     }
     button.createEvent{
-        padding: 12px 20px;
-        font-size: 17px;
+        padding: 12px 25px;
+        font-size: 20px;
+    }
+    button.logout{
+        padding: 12px 25px;
+        font-size: 20px;
     }
     .slogan{
         font-size: 35px;
@@ -590,6 +612,10 @@ hr{
         padding: 8px 16px;
         font-size: 13px;
     }
+    button.logout{
+        padding: 8px 16px;
+        font-size: 13px;
+    }
     .slogan{
         font-size: 23px;
     }
@@ -688,6 +714,11 @@ hr{
         font-size: 12px;
         background: none;
     }
+    button.logout{
+        padding: 8px 10px;
+        font-size: 12px;
+        background: none;
+    }
     .moreInfo{
         display:block;
         margin: unset;
@@ -748,6 +779,11 @@ hr{
         font-size: 12px;
     }
     button.createEvent{
+        padding: 8px 10px;
+        font-size: 12px;
+        background: none;
+    }
+    button.logout{
         padding: 8px 10px;
         font-size: 12px;
         background: none;
