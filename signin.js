@@ -43,7 +43,7 @@ login.addEventListener('click',(e)=>{
         const username= ref(database, 'users/' + id);
         onValue(username, (snapshot) => {
           var data = snapshot.val();
-          window.alert('User logged in ... '+" "+data);
+          window.alert('Finally! You are ready to party. ');
         });
 
         var isloggingin=false;
@@ -67,7 +67,7 @@ login.addEventListener('click',(e)=>{
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
       const uid = user.uid;
-      window.alert("welcome back"+uid);
+      console.log("welcome back"+uid);
       window.location="index.html";
       
       //bla bla bla
