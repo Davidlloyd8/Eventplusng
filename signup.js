@@ -9,6 +9,7 @@ const firebaseConfig = {
   //yout config code
   apiKey: "AIzaSyCuscSxshALFmKUYSyRlebDLjfz-zX9XWc",
   authDomain: "eventplus-vs1.firebaseapp.com",
+  databaseURL: "https://eventplus-vs1-default-rtdb.firebaseio.com",
   projectId: "eventplus-vs1",
   storageBucket: "eventplus-vs1.appspot.com",
   messagingSenderId: "430767169041",
@@ -20,50 +21,65 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
 
-signup.addEventListener('click',(e) => {
 
+
+signup.addEventListener('click',(e) => {
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
   var repassword = document.getElementById('repassword').value;
   var Fullname = document.getElementById('txtf').value;
   var phoneNo = document.getElementById('txtp').value;
-
-
+  
+  var isCreatingUser=true;
   createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
+  .then((userCredential) => {
+
     // Signed in 
-      const user = userCredential.user;
-
+    const user = userCredential.user;
+    // const user = auth.currentUser;
+    if (user!==null) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
       set(ref(database, 'users/' + user.uid),{
-          email: email,
-          phoneNo: phoneNo,
-          Fullname: Fullname
+        username: Fullname,
+        email: email,
+        phoneNo:phoneNo,
+      }).then(()=>{
+        window.alert('account created successfully!');
+        var isCreatingUser=false;
+        window.location="index.html";
+      }).catch((e)=>{
+        var isCreatingUser=false;
+        throw e;
       })
-
-      window.alert('user created!');
+    
+    }
+  })
+      //bla bla bla
       // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
 
-      window.alert(errorMessage);
-    // ..
-    });
+    var isCreatingUser=false;
+    window.alert(errorMessage);
+  // ..
+  });
 
-});
-
-const user = auth.currentUser;
-onAuthStateChanged(auth, (user) => {
-  if (user) {
+  const user = auth.currentUser;
+  onAuthStateChanged(auth, (user) => {
+  if (user && !isCreatingUser) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     const uid = user.uid;
-    window.alert="welcome";
     window.location="index.html"
+    window.alert("welcome"+user.username)
     //bla bla bla
     // ...
   } else {
     // User is signed out
+    // ...
+    //bla bla bla
   }
+  });
 });

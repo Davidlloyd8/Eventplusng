@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
-import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js";
+import { getDatabase, ref, update,onValue } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
+import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -9,6 +9,7 @@ const firebaseConfig = {
   //yout config code
   apiKey: "AIzaSyCuscSxshALFmKUYSyRlebDLjfz-zX9XWc",
   authDomain: "eventplus-vs1.firebaseapp.com",
+  databaseURL: "https://eventplus-vs1-default-rtdb.firebaseio.com",
   projectId: "eventplus-vs1",
   storageBucket: "eventplus-vs1.appspot.com",
   messagingSenderId: "430767169041",
@@ -20,43 +21,62 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
 
+
 login.addEventListener('click',(e)=>{
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
 
-      signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
+  var isloggingin=true;
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    if (user!==null) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      const dt = new Date();
+      update(ref(database, "users/" + user.uid),{
+        last_login: dt,
+      }).then(()=>{
+        const id=user.uid;
 
-        const dt = new Date();
-        update(ref(database, 'users/' + user.uid),{
-          last_login: dt,
-        })
+        const username= ref(database, 'users/' + id);
+        onValue(username, (snapshot) => {
+          var data = snapshot.val();
+          window.alert('User logged in ... '+" "+data);
+        });
 
-        window.alert('User logged in!');
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        var isloggingin=false;
+        window.location="index.html";
+      }).catch((e)=>{
+        var isloggingin=false;
+        throw e;
+      }) 
+    }
 
-        window.alert(errorMessage);
+  }).catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    var isloggingin=false;
+    window.alert(errorMessage);
+  });
+  const user = auth.currentUser;
+  onAuthStateChanged(auth, (user) => {
+    if (user && !isloggingin) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      const uid = user.uid;
+      window.alert("welcome back"+uid);
+      window.location="index.html";
+      
+      //bla bla bla
+      // ...
+    } else {
+      // User is signed out
+      // ...
+      //bla bla bla
+    }
   });
 
 });
-
-const user = auth.currentUser;
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    const uid = user.uid;
-    window.location="index.html"
-    //bla bla bla
-    // ...
-  } else {
-    // User is signed out
-  }
-});
-
