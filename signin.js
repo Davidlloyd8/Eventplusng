@@ -68,7 +68,7 @@ login.addEventListener('click',(e)=>{
       // https://firebase.google.com/docs/reference/js/firebase.User
       const uid = user.uid;
       console.log("welcome back"+uid);
-      window.location="dashboard.html";
+      window.location="dashboard.html"
       
       //bla bla bla
       // ...
