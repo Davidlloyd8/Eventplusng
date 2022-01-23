@@ -1,5 +1,5 @@
 body {
-  background: #ffffff;
+  background: #cccccc;
   font-family: "Inter";
 }
 #button_env {
@@ -9,6 +9,30 @@ body {
   background: rgba(245, 130, 14, 0.8);
   border-radius: 12px;
   color: #ffffff;
+  font-weight: 500;
+}
+#row_1 {
+  height: 80vh;
+  margin: 10vh 10vw;
+  /* margin: 0; */
+}
+#row_2 {
+  height: 100%;
+}
+.form-container {
+  margin: 36px 60px 0 60px;
+}
+#cont {
+  padding: 2rem 6rem 6rem 6rem !important;
+}
+#img_logo {
+  float: left !important;
+  width: 32px !important;
+  height: 32px !important;
+  margin-bottom: 5rem !important;
+}
+.text_logo {
+  font-size: 18px;
   font-weight: 500;
 }
 .create_btn {
@@ -22,11 +46,11 @@ body {
 .text-link {
   text-decoration: none;
 }
-.signin_btn:hover {
+.btn_signin:active {
+  background: rgba(245, 130, 14, 0.8);
   color: #ffffff;
 }
-.signin_btn:active {
-  background: rgba(245, 130, 14, 0.8);
+.btn_signin:hover {
   color: #ffffff;
 }
 .button-link2 {
@@ -40,7 +64,7 @@ body {
   color: rgba(0, 0, 0, 0);
 }
 .text_left {
-  text-align: left !important;
+  text-align: center !important;
   font-size: 24px;
   font-weight: 600;
 }
@@ -56,12 +80,16 @@ input[type="text"] {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   padding: 5px 10px;
   outline: none;
+  width: 100% !important;
+}
+input::placeholder {
+  color: rgba(245, 130, 14, 0.8);
 }
 .btn_signin {
   background: rgba(245, 130, 14, 0.8);
   color: #ffffff;
   border-radius: 12px;
-  padding: 15px 140px;
+  padding: 7px 80px;
 }
 .create_acct {
   color: #000;
@@ -81,3 +109,39 @@ input[type="text"] {
   letter-spacing: -0.231818px;
   color: rgba(0, 0, 0, 0.4);
 }
+@media screen and (max-width: 1024px) {
+  
+}
+ @media screen and (max-width: 998px) {
+   #img_container {
+     display: none;
+   }
+   #cont {
+     padding: 0 !important;
+   }
+   .form-container {
+     margin: 10px;
+     min-height: 85vh;
+   }
+   body {
+     background-color: #ffffff;
+   }
+   .container {
+     margin-top: 0 !important;
+   }
+   #row_1 {
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+}
+ }
+ @media screen and (max-width: 800px) {
+   
+ }
+
+ @media screen and (max-width: 768px) {
+   
+ }
+ @media screen and (max-width: 500px) {
+   
+ }
