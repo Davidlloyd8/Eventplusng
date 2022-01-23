@@ -57,7 +57,7 @@ onAuthStateChanged(auth, (user) => {
             });
             // document.getElementById("anotherhide").style.display="inline";
             // document.getElementById("logout").style.display="none";
-            window.location="/"
+            window.location="../index.js"
         }).catch((error) => {
             // An error happened.
             const errorCode = error.code;
