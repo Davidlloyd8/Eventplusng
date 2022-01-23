@@ -57,7 +57,7 @@ onAuthStateChanged(auth, (user) => {
             });
             // document.getElementById("anotherhide").style.display="inline";
             // document.getElementById("logout").style.display="none";
-            window.location="Eventplusng/index.html";
+            window.location="splash screen.html";
         }).catch((error) => {
             // An error happened.
             const errorCode = error.code;
