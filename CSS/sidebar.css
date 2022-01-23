@@ -103,7 +103,7 @@
     background: #FFFFFF;
   }
   .sidenav-bottom{
-      position: fixed;
+      position: absolute;
       width: inherit;
       bottom: 5px;
   }
