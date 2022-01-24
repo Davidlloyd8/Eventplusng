@@ -1,10 +1,17 @@
 body {
-  background: #cccccc;
+  background: #ffffff;
   font-family: "Inter";
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .container {
-  height: 60vh !important;
-  margin: 8vh 5vh 0vw 10vw !important;
+  /* height: 60vh !important; */
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  /* margin: 8vh 5vh 0vw 10vw !important; */
 }
 #button_env {
   margin-top: 14rem !important;
@@ -21,13 +28,13 @@ body {
   margin: 0;
 }
 #row_2 {
-  height: 80%;
+  /* height: 80%; */
 }
 .form-container {
   margin: 10px 20px;
 }
 #cont {
-  padding: 2rem 6rem 6rem 6rem !important;
+  padding: 2rem 6rem 2rem 6rem !important;
   /* padding: 0; */
 }
 #img_logo {
@@ -39,6 +46,19 @@ body {
 .text_logo {
   font-size: 18px;
   font-weight: 500;
+}
+div.col-lg-7.px-0, div#row_2.row{
+  width: 50vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+}
+#img_container{
+  width: 50vw !important;
+  height: 100vh !important;
+}
+#img_container img{
+  width: 50vw !important;
+  height: 100vh !important;
 }
 .create_btn {
   background: #ffffff;
@@ -56,7 +76,8 @@ body {
   color: #ffffff;
 }
 .btn_signin:hover {
-  color: #ffffff;
+  color: #000;
+  background: rgba(245, 130, 14, 0.8);
 }
 .button-link2 {
   font-weight: 500;
@@ -110,14 +131,71 @@ input::placeholder {
   height: 18px;
 }
 .text_terms {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.231818px;
   color: rgba(0, 0, 0, 0.4);
 }
+
+#sign_up #cont{
+  padding: 1rem !important;
+  width: 50vw !important;
+}
+#sign_up .form-container.pt-4{
+  padding-top: 0 !important;
+}
+#sign_up .form-container.pt-4 h1.text_left{
+  padding: 0.5rem !important;
+  margin-bottom: 0 !important;
+}
+#sign_up div.col-lg-12.mb-2{
+  line-height: 17px !important;
+}
+#sign_up div.col-lg-12.mb-5{
+  margin-bottom: 0.5rem !important;
+}
+#sign_up p.text_form{
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-height:570px) and (orientation:landscape) and (min-width:880px) {
+  body{
+    height: max-content !important;
+  }
+  div.col-lg-7.px-0, div#row_2.row {
+    height: max-content !important;
+  }
+  #img_container{
+    height:inherit !important;
+    max-height: 570px;
+  }
+  #img_container img{
+    height: inherit !important;
+    max-height: 570px;
+  }
+  #sign_up h1.text_left{
+    font-size: 20px;
+  }
+  #sign_up input{
+    font-size: 14px;
+  }
+  #sign_up p.text_form{
+    font-size: 14px;
+  }
+  #sign_up span.text_terms{
+    font-size: 14px;
+  }
+  #sign_up p.small.text-center{
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
 }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 880px) {
+  .container{
+    height: 100vh !important;
+  }
   #img_container {
     display: none;
   }
@@ -139,11 +217,15 @@ input::placeholder {
     padding: 0;
     margin: 0;
   }
+  div.col-lg-7.px-0, div#row_2.row,#sign_up #cont{
+    width: 100%!important;
+    height: 100% !important;
+  }
   #div_img {
     margin: 3em;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 880px) {
   .container {
     margin: 15px !important;
     padding: 50px;
@@ -152,26 +234,27 @@ input::placeholder {
     margin: 0 !important;
   }
   #img_logo {
-    width: 80px !important;
-    height: 80px !important;
+    width: 50px !important;
+    height: 50px !important;
   }
   .text_logo {
-    font-size: 50px;
-  }
-  .text_left {
-    font-size: 48px;
-  }
-  .text_form {
     font-size: 30px;
   }
-  input::placeholder {
+  .text_left {
     font-size: 28px;
   }
+  .text_form {
+    font-size: 20px;
+  }
+  input, input::placeholder {
+    font-size: 17px;
+  }
+
   .btn_signin {
-    font-size: 40px;
+    font-size: 20px;
   }
   .small {
-    font-size: 26px;
+    font-size: 15px;
   }
 }
 
