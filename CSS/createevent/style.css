@@ -26,6 +26,10 @@ body{
     font-size: 14px;
 }
 
+.font-12{
+    font-size: 12px;
+}
+
 .font-24{
     font-size: 24px;
 }
@@ -48,6 +52,10 @@ body{
 
 .bg-brown{
     background-color: #F5820E;
+}
+
+.bg-ash{
+    background-color: #F7F7F7;
 }
 
 .event-form{
@@ -105,6 +113,10 @@ a{
 
 .continue-btn{
     padding: 15px 140px;
+}
+
+.continue-btn-mobile{
+    padding: 8px 116px;
 }
 
 .line-black{
