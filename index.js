@@ -28,13 +28,20 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
+    document.getElementById('loading').style.display="flex";
     const id=user.uid;
-    document.getElementById("anotherhide").style.display="none";
-    document.getElementById("logout").style.display="inline";
+    // document.getElementById("anotherhide").style.display="none";
+    // document.getElementById("logout").style.display="inline";
     const username= ref(database, 'users/' + id + '/username');
+    
     onValue(username, (snapshot) => {
         var data = snapshot.val();
-        window.alert('Welcome Back ... '+data);
+        // window.alert('Welcome Back ... '+data);
+        document.getElementById("welcome").innerHTML='WELCOME, '+data;
+        document.getElementById('signin').style.display="none";
+        document.getElementById('logout').style.display="flex";
+        document.getElementById('loading').style.display="none";
+        document.getElementById('wrapper').style.display="block";
     });
     //bla bla bla
     // ...
@@ -44,11 +51,13 @@ onAuthStateChanged(auth, (user) => {
             // Sign-out successful.
             onValue(username, (snapshot) => {
                 var data = snapshot.val();
+                document.getElementById('logout').style.display="none";
+                document.getElementById('signin').style.display="flex";
                 alert('Goodbye ... '+data);
             });
-            document.getElementById("anotherhide").style.display="inline";
-            document.getElementById("logout").style.display="none";
-            // window.location="index.html"
+            // document.getElementById("anotherhide").style.display="inline";
+            // document.getElementById("logout").style.display="none";
+            window.location="splash screen.html";
         }).catch((error) => {
             // An error happened.
             const errorCode = error.code;

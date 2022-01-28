@@ -1,0 +1,414 @@
+@font-face {
+    font-family: inter;
+    src: url(../Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+#loading {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-color: #FFFFFF;
+    z-index: 99;
+}
+
+#loading-image {
+    z-index: 100;
+}
+/* #wrapper{
+    display: none;
+} */
+
+.sidenav {
+    height: 100vh; /* Full-height: remove this if you want "auto" height */
+    width: 255px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background: #F7F7F7;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /* padding-top: 20px; */
+  }
+  .side-logo{
+      height: 7vh;
+      margin: 4vh 1vw;
+      /* background-color: cadetblue; */
+      /* padding-top: 8px; */
+      /* padding-bottom: 0; */
+  }
+  .side-logo img{
+      /* margin-top: 8px; */
+      width: 32px;
+      height: 32px;
+      margin: 0px 10px;
+  }
+  .side-logoname{
+      font-size: 18px;
+      line-height: 34px;
+      font-style: normal;
+      font-weight: 500;
+      margin: 1vh auto;
+      text-align: center;
+      justify-content: center;
+  }
+  .hamburger{
+      width: inherit;
+  }
+  i.fa-bars{
+      display: none;
+  }
+  .sidenav-links{
+      padding: 71px 0;
+  }
+  .sidenav-links i{
+      font-size: 20px;
+      margin-right: 17px;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    /* padding: 6px 8px 6px 16px; */
+    /* margin: 0 16px; */
+    text-decoration: none;
+    color: #7A7B82;
+    display: block;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /* height: 55px;
+    padding: 20px 30px; */
+    height: 5vh;
+    padding: 1.5vh 3vw;
+    /* padding-bottom: 55px; */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #F5830F;
+    background: #FFFFFF;
+  }
+  #current{
+    color: #F5830F;
+    background: #FFFFFF;
+  }
+  .sidenav-bottom{
+      position: absolute;
+      width: inherit;
+      bottom: 5px;
+  }
+  .sidenav-bottom hr{
+      background-color: #FBDFC4;
+      height: 1.5px;
+  }
+  .sidenav-bottom i{
+      margin-right: 17px;
+  }
+  #logout{
+      display: none;
+  }
+  /* Style page content */
+  .main {
+    margin-left: 255px; /* Same as the width of the sidebar */
+  }
+  .topnav {
+    overflow: hidden;
+    background: #FFFFFF;
+    height: 15vh;
+    padding: 4vh 7vw;
+  }
+  
+  .topnavleft{
+    position:relative;
+  }
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    background: #FEF6EE;
+    border:none;
+    border-radius: 12px;
+    padding: 12px;
+    width: 30vw;
+    height: 7vh;
+    
+  }
+  .topnav input{
+    /* margin: 4vh 7vw; */
+    align-items: center;
+    outline: none;
+  }
+  .topnavleft i{
+      position: absolute;
+      font-size: 16px;
+      right: 20px;
+      top: 6px;
+  }
+  .topnavright{
+      float: right;
+  }
+  #welcome{
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      line-height: 110%;
+      align-items: flex-start;
+  }
+  button.createEvent{
+    background: rgba(245, 130, 14, 0.8);
+    border-radius: 12px;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    padding: 7px 12px;
+    color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: -0.231818px;
+}
+  .main-div{
+    padding: 75px 72px;
+    min-height: 85vh;
+    box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 1200px){
+    .sidenav {
+        width: 200px; /* Set the width of the sidebar */
+      }
+      .side-logo{
+          height: 4vh;
+          margin: 3vh 0.3vw;
+      }
+      .side-logo img{
+          /* margin-top: 8px; */
+          width: 20px;
+          height: 20px;
+          margin: 0px 7px;
+      }
+      .sidenav-links{
+          padding: 61px 0;
+      }
+      .sidenav-links i{
+          font-size: 16px;
+          margin-right: 14px;
+      }
+      /* The navigation menu links */
+      .sidenav a {
+        font-size: 15px;
+        padding: 1.5vh 1.5vw;
+        letter-spacing: -0.431818px;
+      }
+      .main {
+        margin-left: 200px; /* Same as the width of the sidebar */
+      }
+      .topnav {
+        height: 10vh;
+        padding: 2vh 4vw;
+      }
+      /* Style the search box inside the navigation bar */
+      .topnav input[type=text] {
+        font-size: 15px;
+        padding: 12px;
+        height: 6vh;
+        
+      }
+      #welcome{
+          font-size: 15px;
+          line-height: 22px;
+          line-height: 90%;
+          letter-spacing: -0.4px;
+      }
+      button.createEvent{
+        height: 6vh;
+        padding: 6px 12px;
+        color: #FFFFFF;
+        font-size: 15px;
+        letter-spacing: -0.4px;
+    }    
+    .main-div{
+        padding: 45px 42px;
+        min-height: 90vh;
+      }
+  }
+
+  @media screen and (max-width: 900px){
+    .sidenav {
+        width: 150px; /* Set the width of the sidebar */
+      }
+      .side-logo{
+          height: 4vh;
+          margin: 3vh 0.3vw;
+      }
+      .side-logo img{
+          /* margin-top: 8px; */
+          width: 17px;
+          height: 17px;
+          margin: 0px 7px;
+      }
+      .side-logoname{
+          font-size: 14px;
+          line-height: 30px;
+          letter-spacing: -0.231818px;
+      }
+      .sidenav-links{
+          padding: 51px 0;
+      }
+      .sidenav-links i{
+          margin-right: 6px;
+          font-size: 13px;
+      }
+      /* The navigation menu links */
+      .sidenav a {
+        font-size: 13px;
+      }
+      .main {
+        margin-left: 150px; /* Same as the width of the sidebar */
+      }
+      .topnav {
+        padding: 2vh 3vw;
+      }
+      /* Style the search box inside the navigation bar */
+      .topnav input[type=text] {
+        font-size: 13px;
+        padding: 12px;
+        height: 6vh;
+      }
+      .topnavleft i{
+        font-size: 13px;
+        right: 25px;
+    }
+      #welcome{
+          font-size: 12px;
+          line-height: 20px;
+          line-height: 70%;
+          letter-spacing: -0.9px;
+      }
+      button.createEvent{
+        height: 6vh;
+        padding: 6px 12px;
+        color: #FFFFFF;
+        font-size: 13px;
+        letter-spacing: -0.8px;
+    }   
+    .main-div{
+        padding: 40px 37px;
+      } 
+  }
+
+
+  @media screen and (max-width:750px){
+    .side-logo{
+        margin: 1vh 1vw;
+        position: relative;
+    }
+    i.fa-bars{
+        display: flex;
+        right: 10px;
+        top: 5px;
+        font-size: 15px;
+        position: absolute;
+    }
+    
+    .hamburger{
+        display: none;
+    }
+      .sidenav{
+          position:unset;
+          /* background: turquoise; */
+          width: 100vw;
+          height:unset;
+          background: #F7F7F7;
+      }
+      .side-logo{
+          height: fit-content;
+      }
+      .side-logoname{
+          font-size: 12px;
+      }
+      .side-logo a{
+          height: 0;
+          padding: 0;
+      }
+
+      .sidenav-bottom{
+          position: unset;
+      }
+      .main{
+          margin-left: unset;
+      }
+      .topnav{
+          height: fit-content;
+          background: #F7F7F7;
+          padding: 0.2vh 3vw;
+      }
+      .topnavleft{
+          display: none;
+      }
+      .topnavright{
+          float: none;
+      }
+      button.createEvent{
+        padding: 8px 10px;
+        font-size: 12px;
+        background: none;
+        height: unset;
+        color: black;
+        font-weight: 500;
+        letter-spacing: -0.8px;
+        float: right;
+    } 
+    .main-div{
+        box-shadow: none;
+        padding: 25px 25px;
+    }  
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  /* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
+
+  @media screen and (min-height:1000px){
+    .topnav {
+        padding: 3vh 3vw;
+      }
+      button.createEvent{
+          height: 4vh;
+      }
+      .topnav input[type=text] {
+          height: 4vh;
+      }
+  }
+
+  @media screen and (max-height:450px){
+      .side-logoname{
+          font-size: 12px;
+      }
+      .sidenav a{
+          font-size: 12px;
+      }
+      .sidenav i{
+          font-size: 13px;
+      }
+      #welcome{
+          font-size: 12px;
+      }
+      button.createEvent{
+          font-size: 12px;
+      }
+      .main-div{
+        padding: 20px 17px;
+      } 
+  }
