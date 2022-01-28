@@ -1,46 +1,87 @@
 const firstPage = document.querySelector('.first-page');
-const continueOne = document.querySelector('.continue-one');
+const continueOne = document.querySelectorAll('.continue-one');
 const backOne = document.querySelector('.back-one');
 
 const secondPage = document.querySelector('.second-page');
-const continueTwo = document.querySelector('.continue-two');
+const continueTwo = document.querySelectorAll('.continue-two');
 const backTwo = document.querySelector('.back-two');
 
 const thirdPage = document.querySelector('.third-page');
-const continueThree = document.querySelector('.continue-three');
+const continueThree = document.querySelectorAll('.continue-three');
 const backThree = document.querySelector('.back-three');
 
+const forthPage = document.querySelector('.forth-page');
+const continueFour = document.querySelectorAll('.continue-four');
+const backFour = document.querySelector('.back-four');
 
 const displayOne = document.querySelectorAll('.disp-one')
 const displayTwo = document.querySelectorAll('.disp-two')
 const displayThree = document.querySelectorAll('.disp-three')
 const displayFour = document.querySelectorAll('.disp-four')
 
+const range = document.querySelector('#expected-guests');
+const rangeDiv = document.querySelector('.range-div')
+
+range.addEventListener('change', (e) => {
+    console.log(e);
+    rangeDiv.innerHTML += `
+    <p class="font-16 font-400 text-ashh">${range.value}</p>
+`
+})
+
+const seeMore = document.querySelector('.see-more');
+const moreItems = document.querySelector('.more-items');
+
+seeMore.addEventListener('click', () => {
+    moreItems.classList.toggle('d-none')
+})
+
+
 const displayFirstPage = () => {
     firstPage.classList.remove('d-none')
     secondPage.classList.add('d-none');
     thirdPage.classList.add('d-none')
+    forthPage.classList.add('d-none')
 };
 
 const displaySecondPage = () => {
     firstPage.classList.add('d-none')
     secondPage.classList.remove('d-none')
     thirdPage.classList.add('d-none')
+    forthPage.classList.add('d-none')
 };
 
 const displayThirdPage = () => {
     firstPage.classList.add('d-none')
     secondPage.classList.add('d-none');
     thirdPage.classList.remove('d-none')
+    forthPage.classList.add('d-none')
 };
 
-continueOne.addEventListener('click', displaySecondPage);
+const displayForthPage = () => {
+    firstPage.classList.add('d-none')
+    secondPage.classList.add('d-none');
+    thirdPage.classList.add('d-none')
+    forthPage.classList.remove('d-none')
+}
+
+continueOne.forEach(con => {
+    con.addEventListener('click', displaySecondPage);
+})
 
 backTwo.addEventListener('click', displayFirstPage);
 
-continueTwo.addEventListener('click', displayThirdPage);
+continueTwo.forEach(con => {
+    con.addEventListener('click', displayThirdPage);
+})
+
+continueThree.forEach(con => {
+    con.addEventListener('click', displayForthPage);
+})
 
 backThree.addEventListener('click',displaySecondPage);
+
+backFour.addEventListener('click', displayThirdPage);
 
 displayOne.forEach(display => {
     display.addEventListener('click', displayFirstPage);
@@ -53,3 +94,10 @@ displayTwo.forEach(display => {
 displayThree.forEach(display => {
     display.addEventListener('click', displayThirdPage);
 })
+
+displayFour.forEach(display => {
+    display.addEventListener('click', displayForthPage);
+})
+
+
+
