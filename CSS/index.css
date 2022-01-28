@@ -135,12 +135,12 @@ hr{
     margin-left: auto;
     color: rgba(21, 0, 255, 0.25);
 }
-.planShortcut h1{
+/* .planShortcut h1{
     color: #000000;
     font-weight: 600;
     font-size: 30px;
     text-transform: capitalize;
-}
+} */
 .eventsImages{
     margin: 50px 0;
     display: grid;
@@ -474,9 +474,9 @@ hr{
     .info{
         padding: 68px 150px;
     }
-    .planShortcut h1{
+    /* .planShortcut h1{
         font-size: 26px;
-    }
+    } */
     .eventsImages a{
         margin-right: 2vw;
     }
@@ -603,9 +603,9 @@ hr{
     .info{
         padding: 68px 120px;
     }
-    .planShortcut h1{
+    /* .planShortcut h1{
         font-size: 23px;
-    }
+    } */
     .paragraph img{
         width: 60px;
         height: 60px;
@@ -716,9 +716,9 @@ hr{
     .info{
         padding: 68px 80px;
     }
-    .planShortcut h1{
+    /* .planShortcut h1{
         font-size: 19px;
-    }
+    } */
     .newleft h1{
         font-size: 19px;
         line-height: 30px;
@@ -924,10 +924,10 @@ hr{
     .info{
         padding: 48px 50px;
     }
-    .planShortcut h1{
+    /* .planShortcut h1{
         font-size: 16px;
         text-transform: capitalize;
-    }
+    } */
     .eventsImages{
         margin: 20px 0;
     }
