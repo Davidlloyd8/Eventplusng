@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENTPLUSNG</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./CSS/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/overview.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <img id="loading-image" src="./gif/Fading balls.gif" alt="Loading..." />
+    </div>
+    <div class="wrapper" id="wrapper">
+      <div class="sidenav">
+        <div class="side-logo">
+          <img src="./logo/navlogo.png" />
+          <span class="side-logoname">EVENTPLUS NG</span
+          ><a><i class="fas fa-bars"></i></a>
+        </div>
+
+        <div class="hamburger">
+          <div class="sidenav-links">
+            <a href="" id="current"><i class="fas fa-poll"></i> Overview</a>
+            <a href="./draft.html"><i class="fas fa-edit"></i> Draft</a>
+            <a href="./eventorder.html"><i class="fab fa-buffer"></i> Event Orders</a>
+            <a href="./eventprogress.html"><i class="far fa-check-square"></i> Event Progress</a>
+          </div>
+
+          <div class="sidenav-bottom">
+            <hr />
+            <a href="/"><i class="far fa-comment-dots"></i> Help</a>
+            <a href="/"><i class="fas fa-cog"></i> Settings</a>
+            <a href="./signin.html" id="signin"
+              ><i class="fas fa-sign-in-alt"></i> Sign in</a
+            >
+            <a href="/" id="logout"
+              ><i class="fas fa-sign-out-alt"></i> Log out</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Page content -->
+      <div class="main">
+        <div class="topnav">
+          <!-- <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a> -->
+
+          <span class="topnavleft"
+            ><input type="text" placeholder="find an event" /><i
+              class="fa fa-search"
+              aria-hidden="true"
+            ></i
+          ></span>
+          <span class="topnavright">
+            <span id="welcome">Welcome, Guest</span>
+            <a href="#"
+              ><button
+                class="createEvent"
+                title="createEvent"
+                type="button"
+                onclick=""
+              >
+                Create Events <i class="fa fa-plus-circle"></i></button
+            ></a>
+          </span>
+        </div>
+
+        <div class="main-div">
+          <div class="row mb-4">
+            <div class="col-lg-4">
+              <div class="content_box">
+                <div class="text_content">
+                  <p class="small">Total Amount Spent</p>
+                  <p>5000</p>
+                </div>
+                <div class="icon_content">
+                  <i class="fas fa-credit-card"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="content_box">
+                <div class="text_content">
+                  <p class="small">Total Amount Spent</p>
+                  <p>5000</p>
+                </div>
+                <div class="icon_content_1">
+                  <i class="fas fa-clock"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="content_box">
+                <div class="text_content">
+                  <p class="small">Total Amount Spent</p>
+                  <p>5000</p>
+                </div>
+                <div class="icon_content_2">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event_box mb-4">
+            <div class="row">
+              <div class="col-5">
+                <h3 class="mb-2">Get the Event+ App</h3>
+                <p class="small text-light">
+                  Download the Event+ app from your app store and play store
+                </p>
+              </div>
+              <div class="col-7 mt-3">
+                <div style="float: right">
+                  <img
+                    class="img-fluid mx-3 img_icon"
+                    src="https://firebasestorage.googleapis.com/v0/b/eventplus-vs1.appspot.com/o/Images%2FMobile%20app%20store%20badge.png?alt=media&token=2fc3ae1e-4e3b-46c3-aa5a-e5210743a812"
+                  /><img
+                    class="img-fluid"
+                    src="https://firebasestorage.googleapis.com/v0/b/eventplus-vs1.appspot.com/o/Images%2FMobile%20app%20store%20badge%20(1).png?alt=media&token=f4eab207-56e7-49c3-9991-a9fe5a11e41d"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-6">
+              <p>Upcoming Events</p>
+            </div>
+            <div class="col-6">
+              <p class="link_event">
+                <a href="#"
+                  >See all upcoming events <i class="fas fa-chevron-right"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-touch="false"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="box_image">
+                  <div class="row">
+                    <div class="col-6 mb-3">
+                      <p>27<sup>th</sup> January, 2022</p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <p
+                        class="small"
+                        style="color: rgba(0, 0, 0, 0.4); float: right"
+                      >
+                        More Details
+                        <i class="fa fa-arrow-right mx-2"></i>
+                      </p>
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/eventplus-vs1.appspot.com/o/Images%2Funsplash_slider_1.png?alt=media&token=c762d891-af54-4713-852e-031b9a5ed5f1"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h3 id="Event_title">Areola's Big Day</h3>
+                      <p style="color: rgba(0, 0, 0, 0.4)">
+                        A house party for Areola and her friends
+                      </p>
+                      <p id="lines"></p>
+                      <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                        Location
+                      </p>
+                      <h5 style="font-weight: 600">Eko Hotel and Suites</h5>
+                      <p style="color: rgba(0, 0, 0, 0.4)">
+                        Plot 1415 Adetokunbo Ademola Street, Victoria Island
+                        106104, Lagos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="box_image">
+                  <div class="row">
+                    <div class="col-6 mb-3">
+                      <p>27<sup>th</sup> January, 2022</p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <p
+                        class="small"
+                        style="color: rgba(0, 0, 0, 0.4); float: right"
+                      >
+                        More Details
+                        <i class="fa fa-arrow-right mx-2"></i>
+                      </p>
+                    </div>
+                    <div class="col-4">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/eventplus-vs1.appspot.com/o/Images%2Funsplash_slider_2.png?alt=media&token=11dc54a0-6e65-436f-bc8c-33d1239ee7d2"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col-8">
+                      <h3 id="Event_title">Areola's Big Day</h3>
+                      <p style="color: rgba(0, 0, 0, 0.4)">
+                        A house party for Areola and her friends
+                      </p>
+                      <p id="lines"></p>
+                      <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                        Location
+                      </p>
+                      <h5 style="font-weight: 600">Eko Hotel and Suites</h5>
+                      <p style="color: rgba(0, 0, 0, 0.4)">
+                        Plot 1415 Adetokunbo Ademola Street, Victoria Island
+                        106104, Lagos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="row mb-2 mt-5">
+            <div class="col-6">
+              <p>Event Order</p>
+            </div>
+            <div class="col-6">
+              <p class="link_event">
+                <a href="#"
+                  >See all order <i class="fas fa-chevron-right"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+          <div class="table-responsive-xxl">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >Order</label
+                      >
+                    </div>
+                  </th>
+                  <th>Event Category</th>
+                  <th>Status</th>
+                  <th>Date Created</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3066</label
+                      >
+                    </div>
+                  </th>
+                  <td>Social Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 6, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3065</label
+                      >
+                    </div>
+                  </th>
+                  <td>Corporate Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 6, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3064</label
+                      >
+                    </div>
+                  </th>
+                  <td>Religious Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 6, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3063</label
+                      >
+                    </div>
+                  </th>
+                  <td>Social Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 5, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3062</label
+                      >
+                    </div>
+                  </th>
+                  <td>Corporate Event</td>
+                  <td><span class="badge bg-secondary"><i class="fas fa-level-up-alt"></i> Refunded</span></td>
+                  <td>Jan 5, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3061</label
+                      >
+                    </div>
+                  </th>
+                  <td>Social Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 5, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3060</label
+                      >
+                    </div>
+                  </th>
+                  <td>Religious Event</td>
+                  <td><span class="badge bg-danger"><i class="fas fa-times"></i> Cancelled</span></td>
+                  <td>Jan 4, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3059</label
+                      >
+                    </div>
+                  </th>
+                  <td>Social Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 3, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3058</label
+                      >
+                    </div>
+                  </th>
+                  <td>Other Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 3, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="tableMaterialCheck1"
+                      />
+                      <label class="form-check-label" for="tableMaterialCheck1"
+                        >#3057</label
+                      >
+                    </div>
+                  </th>
+                  <td>Social Event</td>
+                  <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                  <td>Jan 3, 2022</td>
+                  <td>View reports <span class="text-warning">Download</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+        $(window).on('load', function(){
+            $('#loading').hide();
+        });
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

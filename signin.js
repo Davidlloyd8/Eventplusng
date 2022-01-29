@@ -47,7 +47,7 @@ login.addEventListener('click',(e)=>{
         });
 
         var isloggingin=false;
-        window.location="dashboard.html";
+        window.location="overview.html";
       }).catch((e)=>{
         var isloggingin=false;
         throw e;
@@ -68,7 +68,7 @@ login.addEventListener('click',(e)=>{
       // https://firebase.google.com/docs/reference/js/firebase.User
       const uid = user.uid;
       console.log("welcome back"+uid);
-      window.location="dashboard.html"
+      window.location="overview.html"
       
       //bla bla bla
       // ...

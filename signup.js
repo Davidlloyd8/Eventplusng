@@ -47,7 +47,7 @@ signup.addEventListener('click',(e) => {
       }).then(()=>{
         window.alert('Account created successfully!');
         var isCreatingUser=false;
-        window.location="dashboard.html";
+        window.location="overview.html";
       }).catch((e)=>{
         var isCreatingUser=false;
         throw e;
@@ -72,7 +72,7 @@ signup.addEventListener('click',(e) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     const uid = user.uid;
-    window.location="dashboard.html"
+    window.location="overview.html"
     console.log("welcome"+user.username)
     //bla bla bla
     // ...
