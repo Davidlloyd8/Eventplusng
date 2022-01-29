@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTPLUSNG</title>
+    <link rel="stylesheet" href="./CSS/sidebar.css">
+    <link rel="stylesheet" href="./CSS/eventprogress/eventprogress.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div id="loading">
+        <img id="loading-image" src="./gif/Fading balls.gif" alt="Loading..." />
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="sidenav">
+            <div class="side-logo">
+                <img src="./logo/navlogo.png">
+                <span class="side-logoname">EVENTPLUS NG</span><a><i class="fas fa-bars"></i></a>
+            </div>
+            
+            <div class="hamburger"> 
+                <div class="sidenav-links" >
+                    <a href=""><i class="fas fa-poll"></i> Overview</a>
+                    <a href="./draft.html"><i class="fas fa-edit"></i> Draft</a>
+                    <a href="./eventorder.html"><i class="fab fa-buffer"></i> Event Orders</a>
+                    <a href="" id="current"><i class="far fa-check-square"></i> Event Progress</a>
+                </div>
+
+                <div class="sidenav-bottom">
+                    <hr>
+                    <a href="/"><i class="far fa-comment-dots"></i> Help</a>
+                    <a href="/"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="./signin.html" id="signin"><i class="fas fa-sign-in-alt"></i> Sign in</a>
+                    <a href="/" id="logout"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page content -->
+        <div class="main">
+            <div class="topnav">
+                <!-- <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a> -->
+                
+                <span class="topnavleft"><input type="text" placeholder="find an event"><i class="fa fa-search" aria-hidden="true"></i></span>
+                <span class="topnavright">
+                    <span id="welcome">Welcome, Guest</span>
+                    <a href="#"><button class="createEvent" title="createEvent" type="button" onclick=""> Create Events <i class="fa fa-plus-circle"></i></button></a>
+                </span>
+            </div>
+
+            <div class="main-div">
+                <!-- YOUR MAIN DIV!!!!! -->
+                <div class="container">
+                    <div class="row main-row" id="progressrow">
+                      <div class="col-sm-4">
+                        <!-- 1 of 2 -->
+                        <div class="row" >
+                            <div class="col col-sm-3">
+                              <img src="./images/Vector.png">
+                              
+                            </div>
+                            <div class="col" id="progressbardiv">
+                                <div id="name">Admin</div>
+                                <div id="progresstag">Event Progress</div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ></div>
+                                  </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-8" >
+                        <div class="row" id="event-name">
+                            <div class="col-sm-9" >
+                                <div id="update-on">
+                                    Update on Areola’s Big Day
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <a>See full details <i class="fas fa-arrow-right" ></i></a>
+                            </div>
+                        </div>
+                        <div id="progress-update">
+                            <div class="row">
+                                <div class="col-sm-9"> 
+                                    Dear Lucent, we’ve successfully completed putting your foods in order. 
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="./images/event/first.png">
+                                    <img src="./images/event/second.png">
+                                    <img src="./images/event/third.png">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row main-row" id="progressrow">
+                        <div class="col-sm-4">
+                          <!-- 1 of 2 -->
+                          <div class="row" >
+                              <div class="col col-sm-3">
+                                <img src="./images/Vector.png">
+                                
+                              </div>
+                              <div class="col" id="progressbardiv">
+                                  <div id="name">Admin</div>
+                                  <div id="progresstag">Event Progress</div>
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 50%; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ></div>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+  
+                        <div class="col-sm-8" >
+                          <div class="row" id="event-name">
+                              <div class="col-sm-9" >
+                                  <div id="update-on">
+                                      Update on Areola’s Big Day
+                                  </div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <a>See full details <i class="fas fa-arrow-right" ></i></a>
+                              </div>
+                          </div>
+                          <div id="progress-update">
+                              <div class="row">
+                                  <div class="col-sm-9"> 
+                                      Dear Lucent, we’ve successfully completed putting your foods in order. 
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <img src="./images/event/first.png">
+                                      <img src="./images/event/second.png">
+                                      <img src="./images/event/third.png">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                      <div class="row main-row" id="progressrow">
+                        <div class="col-sm-4">
+                          <!-- 1 of 2 -->
+                          <div class="row" >
+                              <div class="col col-sm-3">
+                                <img src="./images/Vector.png">
+                                
+                              </div>
+                              <div class="col" id="progressbardiv">
+                                  <div id="name">Admin</div>
+                                  <div id="progresstag">Event Progress</div>
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 50%; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ></div>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+  
+                        <div class="col-sm-8" >
+                          <div class="row" id="event-name">
+                              <div class="col-sm-9" >
+                                  <div id="update-on">
+                                      Update on Areola’s Big Day
+                                  </div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <a>See full details <i class="fas fa-arrow-right" ></i></a>
+                              </div>
+                          </div>
+                          <div id="progress-update">
+                              <div class="row">
+                                  <div class="col-sm-9"> 
+                                      Dear Lucent, we’ve successfully completed putting your foods in order. 
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <img src="./images/event/first.png">
+                                      <img src="./images/event/second.png">
+                                      <img src="./images/event/third.png">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row main-row" id="progressrow">
+                        <div class="col-sm-4">
+                          <!-- 1 of 2 -->
+                          <div class="row" >
+                              <div class="col col-sm-3">
+                                <img src="./images/Vector.png">
+                                
+                              </div>
+                              <div class="col" id="progressbardiv">
+                                  <div id="name">Admin</div>
+                                  <div id="progresstag">Event Progress</div>
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 50%; " aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ></div>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+  
+                        <div class="col-sm-8" >
+                          <div class="row" id="event-name">
+                              <div class="col-sm-9" >
+                                  <div id="update-on">
+                                      Update on Areola’s Big Day
+                                  </div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <a>See full details <i class="fas fa-arrow-right" ></i></a>
+                              </div>
+                          </div>
+                          <div id="progress-update">
+                              <div class="row">
+                                  <div class="col-sm-9"> 
+                                      Dear Lucent, we’ve successfully completed putting your foods in order. 
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <img src="./images/event/first.png">
+                                      <img src="./images/event/second.png">
+                                      <img src="./images/event/third.png">
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

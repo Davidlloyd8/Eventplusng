@@ -1,0 +1,194 @@
+.main-row{
+    margin-bottom: 20px;
+}
+#progressrow{
+    min-height: 100px !important;
+}
+
+.col-sm-4{
+    background: #F7F7F7;
+
+}
+.col-sm-8{
+    padding: 0 !important;
+    
+}
+.col img{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#progressbardiv{
+    margin-top: 40px;
+}
+.progress{
+    height: 0.5rem !important;
+}
+.progress-bar{
+    background-color:#F5820E !important;
+}
+#progressbardiv #name{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+}
+
+#progressbardiv #progresstag{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+}
+.col-sm-8 div#event-name{
+    padding: 13px 20px !important;
+}
+.col-sm-8 div#progress-update{
+    padding: 20px !important;
+}
+div#event-name{
+    border: solid 1px #ECECEC !important;
+    margin: 0 !important;
+}
+#event-name{
+    min-height: 52px;
+    line-height: 24.4px;
+}
+#update-on{
+    color: #F5820E;
+}
+.fa-arrow-right{
+    color: #F5820E;
+    font-size: 11px;
+    margin-left: 10px;
+}
+#progress-update .row{
+    margin: 0 !important;
+}
+div.col-4, div.col-sm-3{
+    padding: 0 !important;
+}
+.col-sm-3 img{
+    width: 40px;
+    height: 40px;
+}
+
+
+@media screen and (max-width:1400px){
+    #update-on{
+        font-size: 16px;
+    }
+    #progressrow div.col-sm-3 a{
+        font-size: 14px;
+    }
+    #progress-update div.col-sm-9{
+        font-size: 14px !important;
+    }
+    .fa-arrow-right{
+        margin-left: 8px;
+    }
+    .main-row{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .col-sm-3 img{
+        width: 25px;
+        height: 25px;
+    }
+    #progressbardiv #name{
+        font-size: 16px !important;
+    }
+    #progressbardiv #progresstag{
+        font-size: 12px !important;
+    }
+    .col-sm-8 div#event-name{
+        padding: 12px 15px !important;
+    }
+    #update-on{
+        font-size: 13px;
+    }
+    #progressrow div.col-sm-3 a{
+        font-size: 11px;
+    }
+    #progress-update div.col-sm-9{
+        font-size: 11px !important;
+    }
+    .fa-arrow-right{
+        margin-left: 5px;
+        font-size: 9px;
+    }
+    .main-row{
+        margin-bottom: 14px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .col-sm-8 div#event-name, .col-sm-8 div#progress-update{
+        padding: 10px !important;
+    }
+    #progressbardiv{
+        margin-top: 15px;
+    }
+    #progressbardiv #name{
+        font-size: 14px !important;
+    }
+    #progressbardiv #progresstag{
+        font-size: 11px !important;
+        margin-bottom: 6px;
+    }
+    #update-on{
+        font-size: 11px;
+    }
+    #progressrow div.col-sm-3 a{
+        font-size: 10px;
+    }
+    #progress-update div.col-sm-9{
+        font-size: 10px !important;
+    }
+    .fa-arrow-right{
+        margin-left: 2px;
+        font-size: 9px;
+    }
+    .main-row{
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .col img{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #progressrow div.col.col-sm-3{
+        max-width: 20vw;
+    }
+    #progressbardiv{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    div.col-sm-3{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .main-row{
+        margin-bottom: 30px;
+    }
+    #progressrow div.col-sm-8{
+        border: solid 1px #ECECEC;
+    }
+    .col-sm-8 div#progress-update{
+        padding: 5px 10px !important;
+    }
+    #event-name{
+        line-height: 14px;
+    }
+    div#event-name{
+        border: none !important;
+    }
+    #update-on{
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
