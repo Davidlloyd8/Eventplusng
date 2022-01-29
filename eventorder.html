@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTPLUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/sidebar.css">
+    <link rel="stylesheet" href="css/overview.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
@@ -21,7 +23,7 @@
             
             <div class="hamburger"> 
                 <div class="sidenav-links" >
-                    <a href="" ><i class="fas fa-poll"></i> Overview</a>
+                    <a href="./overview.html" ><i class="fas fa-poll"></i> Overview</a>
                     <a href="./draft.html"><i class="fas fa-edit"></i> Draft</a>
                     <a href="" id="current"><i class="fab fa-buffer"></i> Event Orders</a>
                     <a href="./eventprogress.html"><i class="far fa-check-square"></i> Event Progress</a>
@@ -49,17 +51,218 @@
             </div>
 
             <div class="main-div">
-                YOUR MAIN DIV!!!!!
+                <div class="table-responsive-xxl">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >Order</label
+                              >
+                            </div>
+                          </th>
+                          <th>Event Category</th>
+                          <th>Status</th>
+                          <th>Date Created</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3066</label
+                              >
+                            </div>
+                          </th>
+                          <td>Social Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 6, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3065</label
+                              >
+                            </div>
+                          </th>
+                          <td>Corporate Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 6, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3064</label
+                              >
+                            </div>
+                          </th>
+                          <td>Religious Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 6, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3063</label
+                              >
+                            </div>
+                          </th>
+                          <td>Social Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 5, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3062</label
+                              >
+                            </div>
+                          </th>
+                          <td>Corporate Event</td>
+                          <td><span class="badge bg-secondary"><i class="fas fa-level-up-alt"></i> Refunded</span></td>
+                          <td>Jan 5, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3061</label
+                              >
+                            </div>
+                          </th>
+                          <td>Social Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 5, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3060</label
+                              >
+                            </div>
+                          </th>
+                          <td>Religious Event</td>
+                          <td><span class="badge bg-danger"><i class="fas fa-times"></i> Cancelled</span></td>
+                          <td>Jan 4, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3059</label
+                              >
+                            </div>
+                          </th>
+                          <td>Social Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 3, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3058</label
+                              >
+                            </div>
+                          </th>
+                          <td>Other Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 3, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="tableMaterialCheck1"
+                              />
+                              <label class="form-check-label" for="tableMaterialCheck1"
+                                >#3057</label
+                              >
+                            </div>
+                          </th>
+                          <td>Social Event</td>
+                          <td><span class="badge bg-success"><i class="fas fa-check"></i>paid</span></td>
+                          <td>Jan 3, 2022</td>
+                          <td>View reports <span class="text-warning">Download</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
             </div>
             
         </div>
     </div>
 
-    <!-- <script>
-        $(window).on('load', function(){
-            $('#loading').hide();
-        });
-    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./index.js" type="module"></script>
 </body>
 </html>
